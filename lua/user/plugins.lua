@@ -58,7 +58,8 @@ return packer.startup(function(use)
 
 	-- Colorschemes
     use "lunarvim/darkplus.nvim"    -- for a more classic vscode look
-    use "dracula/vim"                
+    use "dracula/vim"
+    use "aonemd/kuroi.vim"              
 
     -- Cmp 
     use "hrsh7th/nvim-cmp" -- The completion plugin
