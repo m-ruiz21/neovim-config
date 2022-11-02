@@ -50,16 +50,19 @@ return packer.startup(function(use)
     use "akinsho/bufferline.nvim" 
     use "moll/vim-bbye"               -- allows us to delete buffers easier
     use "nvim-lualine/lualine.nvim"   -- status line
-    use "akinsho/toggleterm.nvim"     -- to toggle through multiple terminals
+    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+        require("toggleterm").setup()
+    end}
     use "ahmedkhalf/project.nvim"     -- for project managment
     use "lewis6991/impatient.nvim"    -- faster loadup times
     use "lukas-reineke/indent-blankline.nvim"   -- adds indentation guides
     use "goolord/alpha-nvim"          -- for the startup page
+    use "folke/which-key.nvim"
 
 	-- Colorschemes
     use "lunarvim/darkplus.nvim"    -- for a more classic vscode look
     use "dracula/vim"
-    use "aonemd/kuroi.vim"              
+    use 'marko-cerovac/material.nvim'
 
     -- Cmp 
     use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -84,7 +87,10 @@ return packer.startup(function(use)
     use "nvim-telescope/telescope.nvim"
 
     -- Treesitter
-    use "nvim-treesitter/nvim-treesitter"
+ 	use {
+		"nvim-treesitter/nvim-treesitter",
+		commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac",
+	}
 
     -- Git
     use "lewis6991/gitsigns.nvim"

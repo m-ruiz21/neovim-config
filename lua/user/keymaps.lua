@@ -40,7 +40,7 @@ keymap("n", "-", ":vsplit<CR>", opts)
 keymap("n", "<C-s>", ":w<cr>", opts)
 keymap("n", "<C-z>", ":u<cr>", opts)
 
--- Insert Mode --
+-- Insert Mode
 
 -- exit insert mode  
 keymap("i", "jk", "<ESC>", opts)
