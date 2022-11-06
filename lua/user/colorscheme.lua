@@ -6,12 +6,18 @@ require("material").setup({
     {
         eob_lines = true
     },
+    contrast = 
+    {
+        non_current_windows = true
+    },
     plugins = 
     {
         "gitsigns",
         "telescope",
         "which-key",
-        "nvim-tree"
+        "nvim-tree",
+        "indent-blankline",
+        "nvim-cmp"
     },
     lualine_style = "stealth"
 })
