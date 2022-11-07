@@ -5,7 +5,7 @@ sudo apt-get install neovim
 ```
 It's set up so that everything installs automatically when you first open up vim. So after you have downloaded neovim, all you have to do is clone it.
 ```
-git clone https://github.com/m-ruiz21/neovim-config.git
+git clone https://github.com/m-ruiz21/neovim-config.git ~/.config/nvim
 ```
 # Optional Steps #
 If using wsl, to give access to system clipboard:
