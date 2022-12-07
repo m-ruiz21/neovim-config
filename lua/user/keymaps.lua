@@ -10,6 +10,9 @@ vim.g.maplocalleader = " "
 
 -- Normal Mode --
 
+-- documentation 
+vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = 0 })
+
 -- window nav
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
