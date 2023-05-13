@@ -3,10 +3,20 @@ First, install neovim 0.8 or higher
 ```
 sudo apt-get install neovim
 ```
+or for windows:
+```
+winget install Neovim.Neovim
+```
+
 It's set up so that everything installs automatically when you first open up vim. So after you have downloaded neovim, all you have to do is clone it.
 ```
 git clone https://github.com/m-ruiz21/neovim-config.git ~/.config/nvim
 ```
+for windows:
+```
+C:\Users\USERNAME\AppData\Local\nvim
+```
+
 # Optional Steps #
 If using wsl, to give access to system clipboard:
 ```
