@@ -94,18 +94,17 @@ return packer.startup(function(use)
 
     -- Git
     use "lewis6991/gitsigns.nvim"
-    use {
-        "zbirenbaum/copilot.lua",
-        cmd = "Copilot",
-        event = "InsertEnter",
-        config = function()
-            require("copilot").setup({})
-        end,
+    use { 
+        "github/copilot.vim", 
+        config = function() 
+            vim.g.copilot_assume_mapped = true 
+        end 
     }
 
-	-- Automatically set up your configuration after cloning packer.nvim
+    -- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
+
 end)
