@@ -41,6 +41,8 @@ keymap("n", "-", ":vsplit<CR>", opts)
 
 -- save shortcut
 keymap("n", "<C-s>", ":w<cr>", opts)
+
+-- undo / redo
 keymap("n", "<C-z>", ":u<cr>", opts)
 
 -- Insert Mode
