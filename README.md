@@ -1,3 +1,7 @@
+# Preview #
+![image](https://github.com/m-ruiz21/neovim-config/assets/38898004/0ff8179e-23d7-4e58-8c2a-560994724155)
+![image](https://github.com/m-ruiz21/neovim-config/assets/38898004/87aba6ec-2008-4ca3-838e-fbd1d75cc6b1)
+
 # Installation #
 First, install neovim 0.8 or higher
 ```
